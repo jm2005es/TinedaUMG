@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supermercado - Realizar pedido</title>
+	<link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+	<header>
+		<h1>Bienvenido al Supermercado</h1>
+	</header>
+	
+	<main>
+		<h2>Productos</h2>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\tortrix.jpg" alt="Tortrix">
+			<h3>Tortrix</h3>
+			<p>Precio: $2</p>
+			<label for="tortrix_cantidad">Cantidad:</label>
+			<input type="number" id="tortrix_cantidad" name="tortrix_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('tortrix_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('tortrix_cantidad').stepDown()">-</button>
+		</div>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\chicharrones.jpg" alt="Chicharrones">
+			<h3>Chicharrones</h3>
+			<p>Precio: $10</p>
+			<label for="chicharrones_cantidad">Cantidad:</label>
+			<input type="number" id="chicharrones_cantidad" name="chicharrones_cantidad" value="0" min="1" max="10">
+			<button type="button" onclick="document.getElementById('chicharrones_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('chicharrones_cantidad').stepDown()">-</button>
+		</div>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\cebolla.jpg" alt="Cebolla">
+			<h3>Cebolla</h3>
+			<p>Precio: $3</p>
+			<label for="cebolla_cantidad">Cantidad:</label>
+			<input type="number" id="cebolla_cantidad" name="cebolla_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('cebolla_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('cebolla_cantidad').stepDown()">-</button>
+		</div>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\tomate.jpg" alt="Tomate">
+			<h3>Tomate</h3>
+			<p>Precio: $3</p>
+			<label for="tomate_cantidad">Cantidad:</label>
+			<input type="number" id="tomate_cantidad" name="tomate_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('tomate_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('tomate_cantidad').stepDown()">-</button>
+		</div>
+
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\leche.jpg" alt="Leche">
+			<h3>Leche</h3>
+			<p>Precio: $15</p>
+			<label for="leche_cantidad">Cantidad:</label>
+			<input type="number" id="leche_cantidad" name="leche_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('leche_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('leche_cantidad').stepDown()">-</button>
+		</div>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\pan.jpg" alt="Pan">
+			<h3>Pan</h3>
+			<p>Precio: $13</p>
+			<label for="pan_cantidad">Cantidad:</label>
+			<input type="number" id="pan_cantidad" name="pan_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('pan_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('pan_cantidad').stepDown()">-</button>
+		</div>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\manzanas.jpg" alt="Manzanas">
+			<h3>Manzanas</h3>
+			<p>Precio: $4</p>
+			<label for="manzanas_cantidad">Cantidad:</label>
+			<input type="number" id="manzanas_cantidad" name="manzanas_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('manzanas_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('manzanas_cantidad').stepDown()">-</button>
+		</div>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\papitas.jpg" alt="Papitas">
+			<h3>Papitas</h3>
+			<p>Precio: $5</p>
+			<label for="papitas_cantidad">Cantidad:</label>
+			<input type="number" id="papitas_cantidad" name="papitas_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('papitas_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('papitas_cantidad').stepDown()">-</button>
+		</div>
+
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\hamburguesas.jpg" alt="Hamburguesas">
+			<h3>Hamburguesas</h3>
+			<p>Precio: $20</p>
+			<label for="hamburguesas_cantidad">Cantidad:</label>
+			<input type="number" id="hamburguesas_cantidad" name="hamburguesas_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('hamburguesas_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('hamburguesas_cantidad').stepDown()">-</button>
+		</div>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\pasta.jpg" alt="Pasta">
+			<h3>Pasta</h3>
+			<p>Precio: $12</p>
+			<label for="pasta_cantidad">Cantidad:</label>
+			<input type="number" id="pasta_cantidad" name="pasta_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('pasta_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('pasta_cantidad').stepDown()">-</button>
+		</div>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\frijoles.jpg" alt="Frijoles">
+			<h3>Frijoles</h3>
+			<p>Precio: $9</p>
+			<label for="frijoles_cantidad">Cantidad:</label>
+			<input type="number" id="frijoles_cantidad" name="frijoles_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('frijoles_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('frijoles_cantidad').stepDown()">-</button>
+		</div>
+		
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\salsa.jpg" alt="Salsa">
+			<h3>Salsa</h3>
+			<p>Precio: $5</p>
+			<label for="salsa_cantidad">Cantidad:</label>
+			<input type="number" id="salsa_cantidad" name="salsa_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('salsa_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('salsa_cantidad').stepDown()">-</button>
+		</div>
+
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\huevos.jpg" alt="Huevos">
+			<h3>Huevos</h3>
+			<p>Precio: $1</p>
+			<label for="huevos_cantidad">Cantidad:</label>
+			<input type="number" id="huevos_cantidad" name="huevos_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('huevos_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('huevos_cantidad').stepDown()">-</button>
+		</div>
+
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\harina.jpg" alt="Harina">
+			<h3>Harina</h3>
+			<p>Precio: $15</p>
+			<label for="harina_cantidad">Cantidad:</label>
+			<input type="number" id="harina_cantidad" name="harina_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('harina_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('harina_cantidad').stepDown()">-</button>
+		</div>
+
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\aceite.jpg" alt="Aceite">
+			<h3>Aceite</h3>
+			<p>Precio: $9</p>
+			<label for="aceite_cantidad">Cantidad:</label>
+			<input type="number" id="aceite_cantidad" name="aceite_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('aceite_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('aceite_cantidad').stepDown()">-</button>
+		</div>
+		
+
+		<div class="producto">
+			<img src="C:\Users\persona 1\OneDrive\Escritorio\index\imagenes\jugosdelfrutal.jpg" alt="Jugos" >
+			<h3>Jugos</h3>	
+			<p>Precio: $8</p>
+			<label for="juegos_cantidad">Cantidad:</label>
+			<input type="number" id="jugos_cantidad" name="jugos_cantidad" value="1" min="0" max="10">
+			<button type="button" onclick="document.getElementById('jugos_cantidad').stepUp()">+</button>
+			<button type="button" onclick="document.getElementById('jugos_cantidad').stepDown()">-</button>
+		</div>
+			<button type="submit" onclick="window.location.href='formulario.html'">Realizar Pedido</button>
+
+		  </form>
+	</main>
+</body>
+</html>
